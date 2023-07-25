@@ -30,7 +30,7 @@ DEBUG = True
 DEBUG = "RENDER" not in os.environ
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["apirest-production-90e7.up.railway.app"]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
 if RENDER_EXTERNAL_HOSTNAME:
