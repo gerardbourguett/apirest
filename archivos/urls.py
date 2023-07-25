@@ -10,10 +10,11 @@ router.register("api/empleados", EmpleadoViewSet)
 router.register("api/archivos", ArchivoViewSet)
 router.register("api/empleados/<int:id>/archivos", ArchivoViewSet, basename="archivos")
 router.register(
-    "api/archivos/<int:id>/descargar",
+    "files/<int:id>",
     DescargarArchivoViewSet,
     basename="descargar",
 )
+
 
 urlpatterns = router.urls
 # Configuración para servir archivos de medios durante el desarrollo.

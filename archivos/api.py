@@ -22,7 +22,7 @@ class DescargarArchivoViewSet(viewsets.ModelViewSet):
     serializer_class = ArchivoSerializer
 
     def get_queryset(self):
-        archivo_id = self.kwargs["archivo_id"]
+        archivo_id = self.kwargs["id"]
         return Archivo.objects.filter(pk=archivo_id)
 
     def retrieve(self, request, *args, **kwargs):
