@@ -14,7 +14,7 @@ class Empleado(models.Model):
 class Archivo(models.Model):
     nombre_archivo = models.CharField(max_length=50)
     descripcion = models.CharField(max_length=50)
-    archivo = models.FileField(upload_to="files/")
+    archivo = models.FileField(upload_to="media/")
     fecha = models.DateTimeField(auto_now_add=True)
 
     empleado = models.ForeignKey(
